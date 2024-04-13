@@ -1,0 +1,15 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+        <h5 class="card-title">Colores</h5>
+
+        <ul class="list-group">
+            @for (color of arregloColores; track $index) {
+            <li class="list-group-item">
+                {{color}}
+            </li>
+            }
+        </ul>
+
+        <app-hijo [dataHijo]="dataParaHijo" (eventEmitterParaPadre)="agregarAlArreglo($event)"></app-hijo>
+    </div>
+</div>

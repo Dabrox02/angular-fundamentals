@@ -1,0 +1,6 @@
+<div class="input-group mt-4">
+    <input #valores type="text" class="form-control" (keyup.enter)="enviarDataPadre(valores.value, $event)">
+    <button (click)="enviarDataPadre(valores.value, $event)" class="btn btn-info" type="button">
+        Enviar Data
+    </button>
+</div>
